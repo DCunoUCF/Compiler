@@ -1,0 +1,33 @@
+struct opcode { char *name; uint8_t num; };
+%%
+nop, OP_NOP
+hlt, OP_HLT
+mov, OP_MOV
+movi, OP_MOVI
+ld, OP_LD
+st, OP_ST
+psh, OP_PSH
+pop, OP_POP
+read, OP_READ
+wr, OP_WR
+beq, OP_BEQ
+bne, OP_BNE
+blt, OP_BLT
+ble, OP_BLE
+bgt, OP_BGT
+bge, OP_BGE
+br, OP_BR
+bl, OP_BL
+ret, OP_RET
+cmp, OP_CMP
+add, OP_ADD
+sub, OP_SUB
+mul, OP_MUL
+div, OP_DIV
+mod, OP_MOD
+cmpi, OP_CMPI
+addi, OP_ADDI
+subi, OP_SUBI
+muli, OP_MULI
+divi, OP_DIVI
+modi, OP_MODI

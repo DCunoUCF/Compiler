@@ -1,0 +1,7 @@
+<map id="FuncDecl" name="FuncDecl">
+<area shape="rect" id="node2" href="$structToken.html" title="Token" alt="" coords="5,95,64,121"/>
+<area shape="rect" id="node3" href="$structTypedIdentList.html" title="TypedIdentList" alt="" coords="129,5,237,32"/>
+<area shape="rect" id="node6" href="$structBlock.html" title="Block" alt="" coords="197,95,251,121"/>
+<area shape="rect" id="node4" href="$structSymbol.html" title="Symbol" alt="" coords="364,95,431,121"/>
+<area shape="rect" id="node5" href="$structScope.html" title="Scope" alt="" coords="295,5,353,32"/>
+</map>

@@ -1,0 +1,72 @@
+TranslationUnit:
+  scope: Scope
+  block: Block
+Block:
+  vardecls: TypedIdentList
+  funcdecls: FuncDeclList
+  statement: Statement
+FuncDecl:
+  scope: Scope
+  symbol: Symbol
+  identifier: string
+  formals: TypedIdentList
+  has_return: bool
+  return_type: Token
+  block: Block
+TypedIdent:
+  symbol: Symbol
+  identifier: string
+  type: Token
+TypedIdentList: list
+FuncDeclList: list
+Statement:
+  union:
+    AssignStatement:
+      assign_symbol: Symbol
+      assign_variable: string
+      assign_expression: Expression
+    CallStatement:
+      call_symbol: Symbol
+      call_function: string
+      call_parameters: ExpressionList
+    ReturnStatement:
+      function_symbol: Symbol
+      return_expression: Expression
+    CompoundStatement:
+      compound_statement: StatementList
+    IfStatement:
+      if_condition: Expression
+      if_branch: Statement
+      if_elsebranch: Statement
+    WhileStatement:
+      while_condition: Expression
+      while_body: Statement
+    ReadStatement:
+      read_symbol: Symbol
+      read_variable: string
+    WriteStatement:
+      write_expression: Expression
+StatementList: list
+Expression:
+  datatype: DataType
+  ershov: int
+  union:
+    BinaryExpression:
+      binary_op: Token
+      binary_left: Expression
+      binary_right: Expression
+    UnaryExpression:
+      unary_op: Token
+      unary_expression: Expression
+    NumberFactor:
+      number_value: int
+    BooleanFactor:
+      boolean_value: bool
+    VariableFactor:
+      variable_symbol: Symbol
+      variable: string
+    FunctionFactor:
+      function_symbol: Symbol
+      function_name: string
+      function_parameters: ExpressionList
+ExpressionList: list

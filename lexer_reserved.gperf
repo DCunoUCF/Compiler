@@ -1,0 +1,21 @@
+struct reserved_type { char *name; int type; };
+%%
+var, VAR
+function, FUNC
+int, INT
+bool, BOOL
+return, RETURN
+begin, BEGIN
+end, END
+if, IF
+then, THEN
+else, ELSE
+while, WHILE
+do, DO
+read, READ
+write, WRITE
+true, TRUE
+false, FALSE
+or, OR
+and, AND
+not, NOT

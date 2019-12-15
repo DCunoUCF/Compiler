@@ -1,0 +1,5 @@
+<map id="Block" name="Block">
+<area shape="rect" id="node2" href="$structTypedIdentList.html" title="TypedIdentList" alt="" coords="5,14,113,41"/>
+<area shape="rect" id="node3" href="$structFuncDeclList.html" title="FuncDeclList" alt="" coords="138,14,237,41"/>
+<area shape="rect" id="node4" href="$structStatement.html" title="Statement" alt="" coords="261,14,343,41"/>
+</map>

@@ -1,0 +1,31 @@
+read dest
+wr src
+beq disp
+bne disp
+blt disp
+ble disp
+bgt disp
+bge disp
+br disp
+bl disp
+ret ri
+mov dest ri
+cmp ri rj
+add dest ri rj
+sub dest ri rj
+mul dest ri rj
+div dest ri rj
+mod dest ri rj
+movi dest imm
+cmpi ri imm
+addi dest ri imm
+subi dest ri imm
+muli dest ri imm
+divi dest ri imm
+modi dest ri imm
+ld dest ri imm
+st src ri imm
+psh src ri
+pop dest ri
+nop
+hlt
